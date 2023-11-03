@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>No-Trello</title>
+    <title>Not Trello</title>
 
 </head>
 <body>
@@ -29,11 +29,18 @@
                     <!-- div#cardPreview.trelloCard -->
                     <!-- id for the JS, class for the CSS -->
                     <div id="cardPreview" class="trelloCard">
-
+                        <h3 class="cardDisplay-title">Fill out the card title in the form!</h3>
+                        <p class="cardDisplay-content">Write a description in the form!</p>
                     </div>
                 <div class="column"></div>
                     <!-- Form to create new columns -->
-                    <form id="columnForm"></form>
+                    <form id="columnForm">
+                        <h1>Create a column:</h1>
+                        <label for="columnTitle">Column title</label>
+                        <input type="text" name="columnTitle" id="columnTitle">
+                        <br />
+                        <button id="columnSubmitButton" type="submit">Add column</button>
+                    </form>
             </div>
             <div class="row">
                 <!-- Column & card display section with drag & drop -->

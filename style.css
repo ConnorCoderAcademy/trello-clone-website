@@ -1,0 +1,64 @@
+/* Asterisk means "anything" (wild card) */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* apply background colour to whole page */
+body {
+    background-color: paleturquoise;
+}
+/* make container use flex box to arrange its children */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* make rows as wide as screen */
+.row {
+    width: 100dvw;
+    padding: 2dvw;
+}
+
+.formRow {
+    display: flex;
+    margin: 0;
+    display: flex;
+    height: 10dvh;
+}
+
+.displayRow {
+    margin: 0;
+    display: flex;
+    height: 70dvh;
+    padding: 1%;
+}
+ /* all columns inside the formRow will have spacing and a default size */
+ .formRow > .column {
+    width: 50dvw;
+    padding: 1dvw;
+    margin: 0;
+ }
+
+ /* all trello columns hae default width and height, but expand to fit all cards inside  */
+ .trelloColumn {
+    width: 33%;
+    background-color: grey;
+    min-height: 80%;
+    height: max-content;
+    margin: 1%;
+ }
+
+ /* all trello card style, even the one in the preview section */
+ .trelloCard {
+    background-color: darkgoldenrod;
+    width: 90%;
+    height: 10dvh;
+    text-align: center;
+    margin: 0;
+ }
+
+ /* style the preview section card only */
+ #cardPreview {
+    background-color: wheat;
+ }
